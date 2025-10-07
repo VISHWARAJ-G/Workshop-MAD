@@ -1,43 +1,11 @@
-# Workshop-Create a application for addition of two numbers
+package com.example.simpleaddition;
 
-## AIM:
-
-To create a application for addition of two numbers using Android Studio
-
-
-## EQUIPMENTS REQUIRED:
-
-Latest Version Android Studio
-
-## ALGORITHM:
-Step 1: Open Android Stdio and then click on File -> New -> New project.
-
-Step 2: Then type the Application name as `Summator` and click Next. 
-
-Step 3: Then select the Minimum SDK as shown below and click Next.
-
-Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
-Step 5: Design layout in activity_main.xml.
-
-Step 6: Get contacts details and Display details give in MainActivity file.
-
-Step 7: Save and run the application.
-
-
-## PROGRAM:
-* Developed by : VISHWARAJ G
-* Registeration Number : 212223220125
-#### 1. MainActivity.java
-```
-package com.example.summator;
-
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         etNum1 = findViewById(R.id.etNum1);
         etNum2 = findViewById(R.id.etNum2);
         etResult = findViewById(R.id.etResult);
@@ -74,20 +43,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-```
-
-## OUTPUT
-
-#### Coding Part
-![alt text](Output_Images/Coding_Part.png)
-
-#### Design_Part
-![alt text](Output_Images/Design_Part.png)
-
-#### Task1
-<img src="./Output_Images/App.jpg" height=400>
-
-## RESULT
-Thus a Simple Android Application for addition of two numbers using Android Studio is developed and executed successfully.
-
-
